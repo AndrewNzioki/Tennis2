@@ -13,8 +13,8 @@ import ETL as etl
 Here, we shall try to clean the data by looking for null values, and find ways
 to deal with the missing data
 '''
-print(etl.tennis_updated2.info())
-print(etl.tennis_updated2.isnull().sum())
+#print(etl.tennis_updated2.info())
+#print(etl.tennis_updated2.isnull().sum())
 
 '''
 No null values, therefore we can continue working on our data
@@ -24,6 +24,9 @@ No null values, therefore we can continue working on our data
 3.Exploratory Data Analysis
 
 This stage is used to prepare for model building/analysis. Since we want this 
-to be a classification algorithm, we want the Nominal Variable 
+to be a classification algorithm, we want the Ordinal Variable to be arranged 
+in an order such that different rankings have a particular numerical class
+
 
 '''
+print(etl.tennis_updated2['Ranking'])
