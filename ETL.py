@@ -78,13 +78,14 @@ We also know that this data is for players over a number of years, so we also
 count the number of years played
 '''
 tennis_count = grouped['Year'].count()
-print(tennis_count)
+#print(tennis_count)
 
 #Now we merge all the data
 tennis_updated = pd.merge(tennis_averages, tennis_sums, 
-                          on=['Player', 'Ranking'], how='inner')
+                          on=['Player', 'Ranking'], how='inner').reset_index()
 tennis_updated2 = pd.merge(tennis_updated, tennis_count, 
-                          on=['Player', 'Ranking'], how='inner')
+                          on=['Player', 'Ranking'], how='inner').reset_index()
+
 
 
 
