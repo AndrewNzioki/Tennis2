@@ -23,5 +23,7 @@ No null values, therefore we can continue working on our data
 '''
 3.Exploratory Data Analysis
 
+This stage is used to prepare for model building/analysis. Since we want this 
+to be a classification algorithm, we want the Nominal Variable 
 
 '''
